@@ -10,12 +10,17 @@ for (i=0; i<63; i++){
 		newDiv.style.width = "11.1%";
 		newDiv.style.float = "left";
 		newDiv.style.paddingBottom = "11.1%";
-		newDiv.style.backgroundColor = "red";
+		newDiv.style.backgroundColor = getRandomColor();
 		parent.appendChild(newDiv);
 
- 	if (i % 2 === 0){
- 		newDiv.style.backgroundColor = "black";
- 	}
 }
 
 
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
