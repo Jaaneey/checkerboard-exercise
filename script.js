@@ -17,7 +17,7 @@ for (i=0; i<63; i++){
 
  	if (i % 2 === 0){
  		newDiv.style.backgroundColor = "black";
- 		newDiv.style.opacity= ".085";
+ 		newDiv.style.opacity= ".35";
  		
  	}
 }
