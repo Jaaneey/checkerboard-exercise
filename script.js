@@ -3,7 +3,7 @@ var parent = document.getElementsByTagName("body")[0];
 
 //parent.appendChild(document.querySelector(".class2"));
 
-var switching = setInterval(switchAround, 3000);
+var switching = setInterval(switchAround, 2000);
 
 
 for (i=0; i<63; i++){
@@ -14,12 +14,14 @@ for (i=0; i<63; i++){
 		newDiv.style.paddingBottom = "11.1%";
 		newDiv.style.backgroundColor = getRandomColor();
 		parent.appendChild(newDiv);
-		switchAround();
 }
 
-function switchAround(){
-		newDiv.style.backgroundColor = getRandomColor();
 
+function switchAround(){
+		var myDivs = document.getElementsByTagName("div");
+		for (i=0; i<myDivs.length; i++){
+		myDivs[i].style.backgroundColor = getRandomColor();
+	}
 }
 
 
