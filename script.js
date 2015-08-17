@@ -16,7 +16,7 @@ for (i=0; i<63; i++){
 		parent.appendChild(newDiv);
 
  	if (i % 2 === 0){
- 		newDiv.style.backgroundColor = "black";
+ 		newDiv.style.backgroundColor = "red";
  		newDiv.style.opacity= ".35";
  		
  	}
